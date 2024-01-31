@@ -24,7 +24,6 @@ public class SpellChecker {
 		word1 = word1.toLowerCase();
 		word2 = word2.toLowerCase();
 		int dist = 0;
-		int min = 0; 
 		if (word1.length() == 0){
 			dist = word2.length();
 		}
@@ -39,9 +38,9 @@ public class SpellChecker {
 			int a = levenshtein(tail(word1), word2);
 			int b = levenshtein(word1, tail(word2));
 			int c = levenshtein(tail(word1), tail(word2));
-			min = Math.min(a, b);
+			int min = Math.min(a, b);
 			if (c < min){
-				min = c;
+				 min = c;
 			}
 			dist = 1 + min;
 		}
