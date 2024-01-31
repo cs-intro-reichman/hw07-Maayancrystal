@@ -21,6 +21,8 @@ public class SpellChecker {
 	}
 
 	public static int levenshtein(String word1, String word2) {
+		word1 = word1.toLowerCase();
+		word2 = word2.toLowerCase();
 		int dist = 0;
 		int min = 0; 
 		if (word1.length() == 0){
