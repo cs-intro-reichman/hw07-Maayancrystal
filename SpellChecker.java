@@ -9,10 +9,6 @@ public class SpellChecker {
 		String correction = spellChecker(word, threshold, dictionary);
 		System.out.println(correction);
 
-		//String word1 = args[0];
-		//String word2 = args[1];
-		//System.out.println(levenshtein(word1, word2));
-
 	}
 
 	public static String tail(String str) {
